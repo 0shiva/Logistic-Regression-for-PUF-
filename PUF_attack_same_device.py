@@ -20,7 +20,7 @@ np.random.seed(1257)
 #tf.set_random_seed(1257)
 
 def readData():
-    data = pd.ExcelFile('C:/Users/Shiva PC/Downloads/Wse2_cryptography.xlsx')
+    data = pd.ExcelFile('data.xlsx')
     df = data.parse('Sheet1')
     df = df.to_numpy()
     df1 = np.where(df==0,df-1,df+0)
